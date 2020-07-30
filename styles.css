@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    text-align: center;
+    background-color: blanchedalmond;
+    font-family: 'Kanit', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1111;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(155, 13, 8);
+}
+
+.nav li {
+    padding: 5px;
+    font-size: 1.2em;
+    border-bottom: 0.8px solid rgb(90, 3, 3) ;
+}
+
+.nav li:hover {
+    background-color: rgb(185, 14, 14);
+}
+
+.nav a {
+    display: block;
+    color: blanchedalmond;
+    text-decoration: none;    
+}
+
+#welcome-section {
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    padding-top: 40vh;
+    font-size: 1.5em;
+}
+
+#projects img{
+    max-width: 100%;
+}
+
+#projects {
+    background-color: rgb(141, 134, 134);
+    padding: 95px 0;
+}
+
+.icons {
+    padding-top: 115px;
+    margin-bottom: 150px;
+}
+
+.icons a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: rgb(192, 139, 71);
+}
+
+.ic-gr {
+    margin: 12px 8px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 10px;
+    width: 40%;
+    border: 1px solid rgb(223, 203, 172);
+    border-radius: 6px;
+    box-shadow: 0 2px 7px 0 rgb(161, 146, 122);
+    cursor: pointer;
+}
+
+.ic-gr:hover {
+    transform: scale(1.02);
+    z-index: -11111;
+}
+
+.ic-gr p {
+    position: relative;
+    bottom: 20px;
+    z-index: -1;
+}
+
+@media(min-width: 1200px){
+    .nav li {
+        float: right;
+        padding: 30px;
+        font-size: 1.5em;
+        border-left: 1px solid rgb(90, 3, 3);
+    }
+    .nav ul::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .header {
+        font-size: 2.3em;
+    }
+    .ic-gr {
+        width: 15%;
+    }
+}
